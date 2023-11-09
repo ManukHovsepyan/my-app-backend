@@ -10,7 +10,7 @@ app.use(cors())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
-const MONGO_URI = 'mongodb+srv://manukhovsepyan19:sm9Y3osszWgQJxE6@cluster0.vxz3dmq.mongodb.net/?retryWrites=true&w=majority';
+const MONGO_URI = 'mongodb+srv://manukhovsepyan19:sm9Y3osszWgQJxE6@cluster0.vxz3dmq.mongodb.net/my-app-backend?retryWrites=true&w=majority';
 mongoose.connect(MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,

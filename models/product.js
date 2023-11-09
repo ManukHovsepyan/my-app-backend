@@ -1,9 +1,11 @@
 const mongoose = require('mongoose');
 
 const productSchema = new mongoose.Schema({
-  name: String,
+  title: String,
   description: String,
-  price: Number
+  src: String,
+  isLike: Boolean,
+  price: Number,
 });
 
 const Product = mongoose.model('Product', productSchema);
